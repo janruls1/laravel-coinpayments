@@ -1,8 +1,8 @@
 {
-    "name": "kevupton/laravel-coinpayments",
+    "name": "janruls1/laravel-coinpayments",
     "description": "Coinpayments for Laravel",
     "keywords": ["laravel", "lumen", "coinpayments"],
-    "type": "Extension",
+    "type": "extension",
     "license": "MIT",
     "authors": [
         {

@@ -33,6 +33,7 @@ class SetupCoinpaymentTables extends Migration
             $table->unsignedInteger("timeout");
             $table->string('status_url');
             $table->string('qrcode_url');
+            $table->string('checkout_url');
             $table->timestamps();
         });
 
