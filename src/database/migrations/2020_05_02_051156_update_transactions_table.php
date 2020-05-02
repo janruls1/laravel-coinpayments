@@ -16,8 +16,12 @@ class SetupCoinpaymentTables extends Migration
         $prefix = cp_table_prefix();
 
         Schema::table($prefix . 'transactions', static function (Blueprint $table) {
-            $table->string('success_url')->after('checkout_url');
-            $table->string('cancel_url')->after('checkout_url');
+            $table->string('success_url')
+                ->after('checkout_url')
+                ->nullable();
+            $table->string('cancel_url')
+                ->after('checkout_url')
+                ->nullable();
         });
     }
 
