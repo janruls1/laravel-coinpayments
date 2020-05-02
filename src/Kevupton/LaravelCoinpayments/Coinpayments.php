@@ -79,6 +79,7 @@ class Coinpayments
         $acceptableFields = [
             'address', 'buyer_email', 'buyer_name',
             'item_name', 'item_number', 'invoice', 'custom', 'ipn_url',
+            'success_url', 'cancel_url'
         ];
 
         $request = [
