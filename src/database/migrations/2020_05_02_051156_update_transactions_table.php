@@ -19,6 +19,7 @@ class UpdateTransactionsTable extends Migration
             $table->string('success_url')
                 ->after('checkout_url')
                 ->nullable();
+
             $table->string('cancel_url')
                 ->after('checkout_url')
                 ->nullable();
