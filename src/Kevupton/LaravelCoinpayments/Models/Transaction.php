@@ -22,6 +22,7 @@ namespace Kevupton\LaravelCoinpayments\Models;
  * @property mixed buyer_name
  * @property mixed item_name
  * @property mixed item_number
+ * @property mixed quantity
  * @property mixed invoice
  * @property mixed custom
  * @property mixed ipn_url

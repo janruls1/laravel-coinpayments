@@ -35,8 +35,13 @@ namespace Kevupton\LaravelCoinpayments\Models;
  * @property mixed          ref_id
  * @property mixed          fee
  * @property mixed          buyer_name
+ * @property mixed          email
+ * @property mixed          first_name
+ * @property mixed          last_name
  * @property mixed          item_name
  * @property mixed          item_number
+ * @property mixed          quantity
+ * @property mixed          item_amount
  * @property mixed          invoice
  * @property mixed          custom
  * @property mixed          send_tx
