@@ -25,15 +25,16 @@ class SetupCoinpaymentTables extends Migration
             $table->string('buyer_name')->nullable();
             $table->string('item_name')->nullable();
             $table->string('item_number')->nullable();
+            $table->string('quantity')->nullable();
             $table->string('invoice')->nullable();
             $table->text('custom')->nullable();
             $table->string('ipn_url')->nullable();
             $table->string('txn_id', 128)->unique();
-            $table->unsignedTinyInteger('confirms_needed');
-            $table->unsignedInteger("timeout");
-            $table->string('status_url');
-            $table->string('qrcode_url');
-            $table->string('checkout_url');
+            $table->unsignedTinyInteger('confirms_needed')->nullable();
+            $table->unsignedInteger("timeout")->nullable();
+            $table->string('status_url')->nullable();
+            $table->string('qrcode_url')->nullable();
+            $table->string('checkout_url')->nullable();
             $table->timestamps();
         });
 
@@ -83,6 +84,7 @@ class SetupCoinpaymentTables extends Migration
             $table->string('buyer_name')->nullable();
             $table->string('item_name')->nullable();
             $table->string('item_number')->nullable();
+            $table->string('quantity')->nullable();
             $table->string('invoice')->nullable();
             $table->text('custom')->nullable();
             $table->string('send_tx')->nullable();

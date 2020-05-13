@@ -50,7 +50,7 @@ class Ipn extends Model
     public $fillable = [
         'ipn_version', 'ipn_id', 'ipn_mode', 'merchant', 'ipn_type', 'txn_id', 'status', 'ref_id',
         'status_text', 'currency1', 'currency2', 'amount1', 'amount2', 'fee', 'buyer_name',
-        'item_name', 'item_number', 'invoice', 'custom', 'send_tx', 'received_amount', 'received_confirms',
+        'item_name', 'item_number', 'invoice', 'quantity', 'custom', 'send_tx', 'received_amount', 'received_confirms',
         'address', 'amount', 'amounti', 'currency', 'feei', 'dest_tag', 'confirms',
     ];
 

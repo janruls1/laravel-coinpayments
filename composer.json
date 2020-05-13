@@ -13,7 +13,9 @@
     "require": {
         "php": ">=5.5",
         "kevupton/laravel-package-service-provider": "^0.0.5",
-        "doctrine/dbal": "^2.6"
+        "doctrine/dbal": "^2.6",
+      "ext-curl": "*",
+      "ext-json": "*"
     },
     "autoload": {
         "psr-4": {

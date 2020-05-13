@@ -394,7 +394,7 @@ class Coinpayments
             $this->ch = curl_init('https://www.coinpayments.net/api.php');
             curl_setopt($this->ch, CURLOPT_FAILONERROR, true);
             curl_setopt($this->ch, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($this->ch, CURLOPT_SSL_VERIFYPEER, 0);
+            curl_setopt($this->ch, CURLOPT_SSL_VERIFYPEER, true);
         }
 
         curl_setopt($this->ch, CURLOPT_HTTPHEADER, ['HMAC: ' . $hmac]);

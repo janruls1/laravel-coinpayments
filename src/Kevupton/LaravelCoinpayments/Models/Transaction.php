@@ -43,7 +43,7 @@ class Transaction extends Model
 {
     public $fillable = [
         'amount1', 'amount2', 'currency1', 'currency2', 'address',
-        'buyer_email', 'buyer_name', 'item_name', 'item_number',
+        'buyer_email', 'buyer_name', 'item_name', 'item_number', 'quantity',
         'invoice', 'custom', 'ipn_url', 'txn_id', 'fee', 'dest_tag',
         'confirms_needed', 'timeout', 'status_url', 'qrcode_url', 'checkout_url',
         'received_amount', 'received_confirms', 'status', 'status_text'
