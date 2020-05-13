@@ -82,8 +82,12 @@ class SetupCoinpaymentTables extends Migration
             $table->string('amount2');
             $table->string('fee');
             $table->string('buyer_name')->nullable();
+            $table->string('email')->nullable();
+            $table->string('first_name')->nullable();
+            $table->string('last_name')->nullable();
             $table->string('item_name')->nullable();
             $table->string('item_number')->nullable();
+            $table->string('item_amount')->nullable();
             $table->string('quantity')->nullable();
             $table->string('invoice')->nullable();
             $table->text('custom')->nullable();
